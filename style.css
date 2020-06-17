@@ -3,6 +3,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background-image:url("images/bg-pattern-desktop.svg") ;
      background-size: cover;
+    background-repeat: no-repeat;
     
 }
 .header{
