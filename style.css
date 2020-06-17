@@ -1,21 +1,27 @@
 body{
     font-size: 16px;
     font-family: 'Josefin Sans', sans-serif;
+   
+    
+}
+.header{
+    margin-top: 0px;
+    width: 300px;
+    
+}
+.logo
+{
+
+   margin-left: 130px;
+   margin-top: 50px;
 }
 .container{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /*to put div as full screen as body (important)*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-
     max-width: 1440px;
-   
+
 }
 .row-1-1
 {
@@ -24,45 +30,46 @@ body{
 .row-1
 {
     margin-top: -400px;
-    margin-left: 130px;
+    margin-left: 120px;
     margin-right: 190px;
     
 }
-.logo
-{
-    margin-top: 300px;
-}
+
 .p1-1
 {
     font-size: 55px;
-    margin-top: 90px;
+    margin-top: 350px;
     text-transform:uppercase;
     font-weight:300 ;
     color: hsl(0, 36%, 70%);
-    letter-spacing: 10px;
+    letter-spacing: 18px;
     margin-bottom: 0px ;
+    line-height: 60px;
 
 }
 .p1-2{
     font-size: 55px;
     color:hsl(0, 6%, 24%);
     text-transform:uppercase;
-    font-weight:300 ;
+    font-weight:600 ;
     text-align:center;
     width: 100px;
     margin-bottom: 0px ;
-    letter-spacing: 10px;
+    letter-spacing: 18px;
+    line-height:60px ;
     
 }
 .p2{
     color:hsl(0, 36%, 70%);
     font-weight: 400;
+    line-height: 26px;
 }
 .form-1 {
     /* This bit sets up the horizontal layout */
     display:flex;
     flex-direction:row;
     padding:2px;
+    margin-top: 40px;
 
   }
   
@@ -127,45 +134,42 @@ body{
 .row-2
 {
     margin-top: 0px;
+   
 }
-.row-2 img{
-    margin-top: 0px;
+.row-2 .imghero{
+    /* replace img here*/
+    content:url("images/hero-desktop.jpg");
+    margin-top: -100px;
     margin-right: 90px;
     width:500px;
    height:660px;
+ 
 }
 @media (max-width:1000px)
 {
     .container
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         width:375px;
     }
-    .row-2{
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-    .row-1-1{
-         margin-top: 150px;
-        display: block;
-    }
-    .row-1-1 .logo1
+    .logo
     {
-        margin-top: 30px;
-        margin-left: 30px;
-        width: 110px;
-       
+   margin-left: 20px;
+   margin-top: 20px;
     }
-    .row-1-1 img{
+    .row-2 .imghero{
+        /* replace img here*/
+        content:url("images/hero-mobile.jpg");
         margin-top: 30px;
         margin-left: 0px;
         margin-right: 0px;
+        width:auto;
+        height:auto;
+
     }
     .row-1{
-        margin-top: 0px;
+        margin-top: -300px;
         margin-left: 10px;
         margin-right: 5px;
     }
